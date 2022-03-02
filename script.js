@@ -6,7 +6,6 @@
 
 
 
-const resultAmount = document.getElementById("resultAmount");
 
 
 function fromCelsius(valueFrom, valueType){
@@ -75,21 +74,23 @@ function convertValueType(){
 
         case "celsius":
           resultValue = fromCelsius(convertingAmount, listUnitTo);
+          unitSymbol = "&deg;C";
           break;
-    
         case "farenheit":
           resultValue = fromFarenheit(convertingAmount, listUnitTo);
+          unitSymbol = "&deg;F";
           break;
-    
         case "kelvin":
           resultValue = fromKelvin(convertingAmount, listUnitTo);
+          unitSymbol = "K";
           break;
       }
       document.getElementById('convertedAmount').innerHTML = `<span>${convertingAmount}</span>`
-      document.getElementById('convertedUnit').innerHTML = `<span>${convertingAmount}</span>`
       document.getElementById('resultAmount').innerHTML = `<span>${resultValue}</span>`
-    
+      document.getElementById('convertedUnit').innerHTML = `<span>${unitSymbol} = </span>`;
+
 }
+
 
 document.getElementById('covertingForm').addEventListener('submit', function(e){
     e.preventDefault();
