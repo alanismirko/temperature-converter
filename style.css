@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        #5D576B 50%,
+        #9BC1BC 50%
+    ) fixed;
+}
+
+.container {
+    background-color: #E6EBE0;
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 15px 30px 35px rgba(0,0,0,5);
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    border-radius: 20px;
+}
+
+header{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#convertingAmount{
+    height: 30px;
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#listUnitFrom, #listUnitTo{
+    font-size: 16px;
+}
+
+button{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 30px;
+    width:200px;
+    font-size: 16px;
+    background-color: #5D576B;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,5);
+}
+
+footer{
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.results{
+    display: inline-block;
+    background-color: #9BC1BC;
+    width: 100%px;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -86,6 +86,7 @@ function convertValueType(){
           break;
       }
       document.getElementById('convertedAmount').innerHTML = `<span>${convertingAmount}</span>`
+      document.getElementById('convertedUnit').innerHTML = `<span>${convertingAmount}</span>`
       document.getElementById('resultAmount').innerHTML = `<span>${resultValue}</span>`
     
 }
